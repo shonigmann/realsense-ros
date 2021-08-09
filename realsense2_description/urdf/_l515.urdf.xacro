@@ -63,7 +63,7 @@ aluminum peripherial evaluation case.
         <!-- the mesh origin is in the middle of the front plate -->
         <origin xyz="${l515_zero_depth_to_glass} 0 ${-l515_cam_center_to_depth_pz}" rpy="${M_PI/2} 0 ${M_PI/2}"/>
         <geometry>
-	        <mesh filename="package://realsense2_description/meshes/l515.dae" />
+	        <mesh filename="file://$(find realsense2_description)/meshes/l515.dae" />
         </geometry>
       </visual>
       <collision>
@@ -74,7 +74,7 @@ aluminum peripherial evaluation case.
       </collision>
       <inertial>
         <!-- The following are not reliable values, and should not be used for modeling -->
-        <!-- calculated assuming full cylinder as described here: https://en.wikipedia.org/wiki/List_of_moments_of_inertia -->
+        <!-- calculated assuming full cylinder as described here- https://en.wikipedia.org/wiki/List_of_moments_of_inertia -->
         <mass value="0.095" />
         <origin xyz="0 0 0" />
         <inertia ixx="0.000044" ixy="0.0" ixz="0.0" iyy="0.000027" iyz="0.0" izz="0.000027" />
